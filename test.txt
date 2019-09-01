@@ -1,0 +1,46 @@
+﻿/**
+ * 小程序配置文件
+ */
+
+// 此处主机域名是腾讯云解决方案分配的域名
+// 小程序后台服务解决方案：https://www.qcloud.com/solution/la
+
+var host = "api.heclouds.com"
+
+var config = {
+
+  // 下面的地址配合云端 Server 工作
+  host,
+
+  // 登录地址，用于建立会话
+  loginUrl: `https://${host}/login`,
+
+  // 请求设备信息地址
+  requestUrl: `https://${host}/devices`,
+
+  // 控制设备地址d
+  controlUrl: `https://${host}/cmds`,
+
+  // 下载二进制数据接口
+  requestBinUrl: `https://${host}/bindata`,
+
+  // 下载示例图片接口
+  downloadImageUrl: `https://${host}/bindata`,
+
+  //注册Url
+  registerUrl: `https://${host}/register_de`,
+
+  //SMS验证码Url
+  smsUrl: `https://yun.tim.qq.com/v5/tlssmssvr/sendsms?sdkappid=1400118996`,
+
+  //设备API
+  deviceApi:'QOYx5xbVw2nKgJe00b4iTRmp=pU=',
+
+  //绑定信息API
+  bindedApi:'IOzQw0sV72yNqaKiYYwaeDGyB9o=',
+
+  //注册码
+  registerCode: 'sEYA85gWXPFS4BId'
+};
+
+module.exports = config
